@@ -1,0 +1,23 @@
+{
+	"bridge": {
+		"name": "Homebridge",
+		"username": "CD:21:3D:E3:CE:38",
+		"port": 51826,
+		"pin": "031-45-154"
+	},
+
+	"description": "This is an example configuration for the Power consumption of Samsung Airconditioner homebridge plugin",
+
+	"accessories": [
+		{
+"accessory": "SamsungPowerConsumption",
+"name": "CorrenteTotCucina",
+"ip" : "192.168.1.121",
+"token": "BIl0sfKu9p",
+"patchCert": "/usr/lib/node_modules/homebridge-samsung-airconditioner/ac14k_m.pem",
+"patchDatabase": "/home/pi/webcam/",
+"dataBName": "databCucina"
+
+}
+	]
+}
