@@ -25,10 +25,6 @@ totalMonth=0;
 totalDay=0;
 plusOne=0;
 plusOneDay=0;
-//console.log(data2);
-
-
-
 module.exports = function (homebridge) {
     Service = homebridge.hap.Service;
     Characteristic = homebridge.hap.Characteristic;
@@ -44,8 +40,6 @@ function PowerConsumptionAccessory(log, config) {
     this.patchDatabase = config['patchDatabase'];
     this.dataBName = config['dataBName'];
     const dbPath = path.resolve(__dirname, this.patchDatabase+this.dataBName+'Out.db');
-    const PDB = this.patchCert;
-    const DBN = this.dataBName;
     this.powerConsumption = 0;
     this.totalPowerConsumption = 0;
     var EvePowerConsumption = function() {
@@ -92,7 +86,6 @@ function PowerConsumptionAccessory(log, config) {
 PowerConsumptionAccessory.prototype.getPowerConsumption = function (callback) {
     var self = this;
 const dbPath = path.resolve(__dirname, this.patchDatabase+this.dataBName+'Out.db');
-   // var response;
     var body2;
     var totalEnergy;
     var str; //Nuovo
