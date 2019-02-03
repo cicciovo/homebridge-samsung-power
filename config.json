@@ -12,8 +12,8 @@
 		{
 "accessory": "SamsungPowerConsumption",
 "name": "CorrenteTotCucina",
-"ip" : "192.168.1.121",
-"token": "BIl0sfKu9p",
+"ip" : "192.168.1.XXX",
+"token": "XXd44XDSD45",
 "patchCert": "/usr/lib/node_modules/homebridge-samsung-airconditioner/ac14k_m.pem",
 "patchDatabase": "/home/pi/webcam/",
 "dataBName": "databCucina"
